@@ -1,1 +1,27 @@
-
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug PSInvoker (.NET Framework)",
+      "type": "clr",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/Debug/PSInvoker.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "console": "internalConsole",
+      "preLaunchTask": "build-psinvoker"
+    },
+    {
+      "name": "Release PSInvoker (.NET Framework)",
+      "type": "clr",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/Release/PSInvoker.exe",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "stopAtEntry": false,
+      "console": "internalConsole",
+      "preLaunchTask": "build-psinvoker-release"
+    }
+  ]
+}
